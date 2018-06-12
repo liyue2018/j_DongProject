@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>touch</title>
+    <link rel="stylesheet" href="">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <script>
+        var div = document.querySelector('div');
+        var startX,startY,moveX,moveY,distanceX,distanceY;
+        document.addEventListener("touchstart",function(e) {
+            e = e || event;
+
+            startX = e.targetTouches[0].clientX;
+            startY = e.targetTouches[0].clientY;
+        });
+        document.addEventListener('touchmove', function(e) {
+            e = e || event;
+            moveX = e.targetTouches[0].clientX;
+            moveY = e.targetTouches[0].clientY;
+
+            distanceX = moveX - startX;
+            distanceY = moveY - startY;
+            e.target.style.transform = "translate(" + distanceX + "px," + distanceY + "px)";
+        })
+        div.addEventListener('touchend', function(e) {
+            e = e || event;
+        })
+
+        // 获取当前第一次触摸时的对象
+
+        document.addEventListener('touchstart', function (e) {
+           console.log(e.target);
+        })
+    </script>
+</body>
+</html>

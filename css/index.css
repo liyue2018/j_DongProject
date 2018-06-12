@@ -1,0 +1,211 @@
+/*
+* @Author: liyue2018
+* @Date:   2018-06-06 10:45:16
+* @Last Modified by:   liyue2018
+* @Last Modified time: 2018-06-08 00:10:10
+*/
+.jd_layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  height: 1000px;
+  background: #f1f1f1; }
+
+.jd_search {
+  height: 50px;
+  width: 100%;
+  max-width: 640px;
+  background: rgba(233, 35, 34, 0);
+  z-index: 3;
+  position: fixed;
+  top: 0; }
+  .jd_search .jd_logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 68px;
+    background: url("../images/jd_logo.png") no-repeat;
+    background-size: 68px 60px;
+    background-position: center center; }
+  .jd_search .jd_login {
+    width: 40px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 50px;
+    text-align: center; }
+  .jd_search .jd_searchBox {
+    width: 100%;
+    height: 100%;
+    padding-left: 80px;
+    padding-right: 50px; }
+    .jd_search .jd_searchBox input {
+      width: 100%;
+      height: 30px;
+      display: inline-block;
+      margin-top: 8px;
+      padding: 2px 40px;
+      border-radius: 15px; }
+    .jd_search .jd_searchBox i.iconfont {
+      position: absolute;
+      top: 13px;
+      left: 92px;
+      font-weight: 700;
+      font-size: 17px;
+      color: #ccc; }
+
+.jd_banner {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative; }
+  .jd_banner .jd_bannerImg {
+    width: 700%;
+    height: 100%;
+    position: relative; }
+    .jd_banner .jd_bannerImg li {
+      width: 14.28%;
+      float: left;
+      height: 100%; }
+      .jd_banner .jd_bannerImg li img {
+        width: 100%;
+        height: 100%;
+        vertical-middle: bottom; }
+  .jd_banner .jd_bannerDot {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+    .jd_banner .jd_bannerDot li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border-radius: 50%;
+      margin-left: 10px; }
+      .jd_banner .jd_bannerDot li:first-of-type {
+        margin-left: 0; }
+    .jd_banner .jd_bannerDot li.active {
+      background: #ff0; }
+
+.jd_topNav {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  margin: 10px 0;
+  height: 40px; }
+  .jd_topNav ul li {
+    width: 25%;
+    float: left;
+    padding: 10px 0;
+    border-right: 4px solid #f1f1f1;
+    text-align: center; }
+  .jd_topNav ul li.active {
+    border-bottom: 3px solid #f00; }
+
+.jd_nav ul {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding: 20px; }
+  .jd_nav ul li {
+    width: 25%;
+    height: 80px;
+    float: left;
+    margin-bottom: 30px;
+    text-align: center; }
+    .jd_nav ul li i.iconfont {
+      display: block;
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      font-size: 26px;
+      line-height: 50px;
+      border-radius: 6px;
+      background: #feb185;
+      margin: 0 auto;
+      text-align: center; }
+    .jd_nav ul li p {
+      margin-top: 10px; }
+
+.jd_product {
+  width: 100%; }
+  .jd_product .jd_productBox {
+    background: #fff;
+    margin: 12px 0;
+    overflow: hidden;
+    box-shadow: 0 5px 4px -1px rgba(0, 0, 0, 0.1); }
+    .jd_product .jd_productBox .jd_pTips > h3 {
+      border-left: 3px solid #f00;
+      padding-left: 8px;
+      font-weight: normal;
+      height: 16px;
+      line-height: 16px; }
+    .jd_product .jd_productBox .jd_pContent {
+      width: 100%;
+      height: 240px;
+      border-top: 1px solid #f1f1f1;
+      padding: 15px 0; }
+      .jd_product .jd_productBox .jd_pContent a {
+        display: block;
+        width: 50%;
+        height: 50%; }
+        .jd_product .jd_productBox .jd_pContent a img {
+          width: 100%;
+          height: 100%; }
+      .jd_product .jd_productBox .jd_pContent a.ah100 {
+        height: 100%; }
+
+.jd_sk .jd_pTips {
+  height: 40px;
+  line-height: 40px;
+  padding-right: 10px; }
+  .jd_sk .jd_pTips .jd_sk_icon {
+    padding-left: 6px; }
+  .jd_sk .jd_pTips .jd_sk_text {
+    color: #f00;
+    padding: 0 6px; }
+  .jd_sk .jd_pTips .jd_sk_time {
+    display: inline-block; }
+    .jd_sk .jd_pTips .jd_sk_time span {
+      padding: 2px 3px;
+      background: #333;
+      color: #fff;
+      margin: 0 -1px; }
+    .jd_sk .jd_pTips .jd_sk_time i {
+      font-style: normal; }
+
+.jd_sk .jd_pContent {
+  height: 200px !important; }
+  .jd_sk .jd_pContent .jd_pList {
+    width: 100%;
+    margin-top: 10px; }
+    .jd_sk .jd_pContent .jd_pList .jd_pItem {
+      width: 33.3%;
+      height: 100%;
+      padding: 0 30px;
+      border-right: 2px solid #f1f1f1;
+      text-align: center;
+      float: left; }
+      .jd_sk .jd_pContent .jd_pList .jd_pItem:last-child {
+        border-right: none; }
+      .jd_sk .jd_pContent .jd_pList .jd_pItem a {
+        width: 100%;
+        height: 100%; }
+      .jd_sk .jd_pContent .jd_pList .jd_pItem img {
+        width: 100%;
+        height: 100px; }
+      .jd_sk .jd_pContent .jd_pList .jd_pItem .jd_pItem_name {
+        height: 22px;
+        line-height: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 10px; }
+      .jd_sk .jd_pContent .jd_pList .jd_pItem .jd_pItem_price {
+        color: #f00;
+        font-size: 16px; }
